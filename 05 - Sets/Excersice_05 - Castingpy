@@ -1,3 +1,12 @@
 # casting !
-#removing duplocates in a set!
 
+#Convert a list to set!
+my_list = [1,2,3]
+print(set(my_list))
+# Expected output: {1, 2, 3}
+
+# remove duplicate for a list!
+my_list = [1,2,3,2,1,4]
+unique_list = list(set(my_list))
+print(unique_list)
+# Expected output: [1, 2, 3, 4]
