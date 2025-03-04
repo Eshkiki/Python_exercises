@@ -1,4 +1,4 @@
-# join two list
+# join a list
 
 words = ["This", "is", "a", "test."]
 sentence = " ".join(words)
