@@ -4,10 +4,12 @@ employees1 = {"id":[100,101], "name": ["Alice","Bob"], "scale":[7,8], "point": [
 print(alice["id"])
 # Expected output: 100
 
-'''
-print(alice["age"])
-# Expected output: KeyError: 'age''
-'''
+try:
+    print(alice["age"])
+except Exception as e:
+    print(f"An error occurred: {e}")
+# Expected output: An error occurred: 'age'
+
 
 print(alice.get("id"))
 # Expected output: 100

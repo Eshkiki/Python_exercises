@@ -9,10 +9,12 @@ print(my_list)
 
 
 # removing a not existing item in the list containg 2
-#my_list.remove(0)
-print(my_list)
-
-# Expected output : ValueError: list.remove(x): x not in list
+try:
+    my_list.remove(0)
+    print(my_list)
+except Exception as e:
+    print(f"An error occurred: {e}")
+# Expected output: An error occurred: list.remove(x): x not in list
 '''
 To prevent this error
     1. check if the item exists in the list before removing it (using "in" operator or "count" method )

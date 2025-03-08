@@ -13,11 +13,13 @@ print(x1,y1)
 
 
 # read multiple values!
-'''
-x2,y2 = location
-print(x2,y2)
-# Expected value: ValueError: too many values to unpack (expected 2)
-'''
+try:
+    x2,y2 = location
+    print(x2,y2)
+except Exception as e:
+    print(f"An error occurred: {e}")
+# Expected value: An error occurred: too many values to unpack (expected 2)
+
 x2, *y2 =  location
 print(x2,y2, type(y2)) #the y2 would become a list!, list of values
 # Expected value: 10 [12, 8] <class 'list'>

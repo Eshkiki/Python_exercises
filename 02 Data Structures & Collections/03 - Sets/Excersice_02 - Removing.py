@@ -6,11 +6,13 @@ my_set.remove(3)
 print(my_set)
 #Expected output: 10, 4
 
-'''
-my_set.remove(3)
-print(my_set)
-#Expected output: KeyError: 3
-'''
+try:
+        my_set.remove(3)
+        print(my_set)
+except Exception as e:
+    print(f"An error occurred: {e}")
+#Expected output: An error occurred: 3
+
 
 my_set =  {3,10,4}
 my_set.discard(3)
@@ -34,8 +36,10 @@ Note:   The output might be slightly differents as Sets are unordered collection
         Also, pop select a random value!
 '''
 
-'''
-item = my_set.pop()
-item = my_set.pop()
-#Expected output: KeyError: 'pop from an empty set'
-'''
+try:
+        item = my_set.pop()
+        item = my_set.pop()
+        item = my_set.pop()
+except Exception as e:
+    print(f"An error occurred: {e}")
+#Expected output: An error occurred: 'pop from an empty set'

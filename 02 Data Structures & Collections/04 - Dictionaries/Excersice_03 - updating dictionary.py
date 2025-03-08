@@ -4,10 +4,11 @@ employees1 = {"id":[100,101], "name": ["Alice","Bob"], "scale":[7,8], "point": [
 
 alice["point"] = alice["point"] +1
 print(alice)
-'''
-alice.get("scale") = 8
+
+
+ #alice.get("scale") = 8
 # Ecpected output : SyntaxError: cannot assign to function call here. Maybe you meant '==' instead of '='?'
-'''
+
 
 
 alice_scale = alice.pop("scale")

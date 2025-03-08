@@ -7,12 +7,14 @@ print(my_frozen_set)
 
 
 
-'''
-my_frozen_set =  frozenset({1,2,3})
-my_frozen_set.add(5)
-print(my_frozen_set)
-#Expected output: AttributeError: 'frozenset' object has no attribute 'add'
-'''
+try:
+    my_frozen_set =  frozenset({1,2,3})
+    my_frozen_set.add(5)
+    print(my_frozen_set)
+except Exception as e:
+    print(f"An error occurred: {e}")
+#Expected output: An error occurred: 'frozenset' object has no attribute 'add'
+
 
 
 # freezing a set and unfreezing it
