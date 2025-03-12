@@ -2,7 +2,7 @@ import timeit
 
 code1 = '''
 import random
-my_list_1 = [random.randint(1, 10000) for _ in range(10)]
+my_list_1 = [random.randint(1, 100000) for _ in range(10)]
 my_list_1.sort()
 smallest = my_list_1[:3]
 '''
@@ -10,7 +10,7 @@ smallest = my_list_1[:3]
 code2 = '''
 import random
 import heapq
-my_list_1 = [random.randint(1, 10000) for _ in range(10)]
+my_list_1 = [random.randint(1, 100000) for _ in range(10)]
 heapq.heapify(my_list_1)
 smallest = heapq.nsmallest(3, my_list_1)
 '''
