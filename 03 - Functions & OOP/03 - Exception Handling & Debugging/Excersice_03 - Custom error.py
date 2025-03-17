@@ -16,3 +16,4 @@ except MyException:
 
 
 math.div(4,0)
+#Expected output: MyException: value should be positive
