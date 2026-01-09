@@ -1,4 +1,4 @@
-# Given a list of words, use list comprehension to extract the first letter of each word.
+# Given a list of words, use list comprehension to extract maximum number.
 
 
 maximum =  lambda x,y: (((x-y)>0) * x) + ( ((y-x) >0) * y)+ ((x == y) * x)
